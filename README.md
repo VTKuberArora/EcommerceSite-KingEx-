@@ -1,4 +1,3 @@
-This is a **README** for an eCommerce website titled **KingEx**. It will describe the purpose of the website, outline its characteristics, detail the process of setting up a website, and give other such relevant information.
 
 ---
 
