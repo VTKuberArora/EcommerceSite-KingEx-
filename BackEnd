@@ -1,0 +1,27 @@
+**server.js** (Node.js Server File)
+```javascript
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+
+// Connect to MongoDB database
+mongoose.connect('mongodb://localhost/kingex', { useNewUrlParser: true, useUnifiedTopology: true });
+
+// Define routes for API endpoints
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/api/products', function(req, res) {
+    // Retrieve products from database and send as JSON response
+});
+
+app.post('/api/orders', function(req, res) {
+    // Handle order creation and send confirmation email
+});
+
+// Start server
+const port = 3000;
+app.listen(port, function() {
+    console.log(`Server started on port ${port}`);
+});
